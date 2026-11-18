@@ -15,5 +15,5 @@ Observed on 18 November 2026 by running `tests/acceptance.spec.js` with Playwrig
 | Desktop + mobile emulation | 9. Run init twice, add tabs | One set, one add | 1 set, `item_count` 2 | Pass | |
 | Desktop + mobile emulation | 10. Disable, then increase quantity | Original drawer, no shipping calculation | 0 B elements, `total_price` 8000, `remaining_cents` null | Pass | |
 | Desktop + mobile emulation | 11. Keyboard: increase, close, reopen | Works by keyboard, focus returns, no horizontal scroll | Unlocked message; focus on Open cart, then on Close cart; 1 set; page width within viewport | Pass | Focus order checked, not screen-reader output |
-| GitHub Pages (live) | Same 11 checks via the workflow's `pages` target | All pass | See the latest Actions run | See badge | Run from GitHub Actions |
+| GitHub Pages (live) | Same 11 checks against the live site via the workflow's `pages` target (GitHub Actions, Playwright Chromium, desktop + mobile emulation) | All pass | 22 of 22 passed on 19 November 2026 ([run](https://github.com/nafeeshasnat/cart-drawer-ab-test/actions/runs/44361818773)) | Pass | Emulation, not a real phone |
 | Physical phone | All checks in portrait and landscape | All pass | Pending – Nafees to verify on a real device | Pending | Not yet observed |
